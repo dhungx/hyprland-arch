@@ -1,15 +1,13 @@
 ###### *<div align="right"><sub>// thiết kế bởi t2</sub></div>*
-<div align="center">
+<div align = center>
     <a href="https://discord.gg/AYbJ9MJez7">
-    <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
+<img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
     </a>
 </div>
 
-<!--
 <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
 
 <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_presence_count&suffix=%20online&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
--->
 
 <div align="center">
 
@@ -35,19 +33,10 @@ https://github.com/prasanthrangan/hyprdots/assets/106020512/7f8fadc8-e293-4482-a
 <img src="Source/assets/Installation.gif" width="200"/>
 ---
 
-Kịch bản cài đặt này được thiết kế cho một cài đặt [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) tối thiểu, nhưng **có thể** hoạt động trên một số [distro dựa trên Arch](https://wiki.archlinux.org/title/Arch-based_distributions).
-Khi cài đặt HyDE cùng với một [DE](https://wiki.archlinux.org/title/Desktop_environment)/[WM](https://wiki.archlinux.org/title/Window_manager) khác, do đây là một thiết lập được tùy chỉnh mạnh, có thể **sẽ** xung đột với các chủ đề [GTK](https://wiki.archlinux.org/title/GTK)/[Qt](https://wiki.archlinux.org/title/Qt), [Shell](https://wiki.archlinux.org/title/Command-line_shell), [SDDM](https://wiki.archlinux.org/title/SDDM), [GRUB](https://wiki.archlinux.org/title/GRUB), v.v... và bạn sẽ phải tự chịu rủi ro.
+Script cài đặt được thiết kế cho một cài đặt [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) tối giản, nhưng **có thể** hoạt động trên một số [distro dựa trên Arch](https://wiki.archlinux.org/title/Arch-based_distributions).
+Mặc dù việc cài đặt HyDE cùng với một [DE](https://wiki.archlinux.org/title/Desktop_environment)/[WM](https://wiki.archlinux.org/title/Window_manager) khác nên hoạt động, nhưng vì đây là một thiết lập tùy chỉnh mạnh mẽ, nó **sẽ** xung đột với chủ đề [GTK](https://wiki.archlinux.org/title/GTK)/[Qt](https://wiki.archlinux.org/title/Qt), [Shell](https://wiki.archlinux.org/title/Command-line_shell), [SDDM](https://wiki.archlinux.org/title/SDDM), [GRUB](https://wiki.archlinux.org/title/GRUB), v.v. và bạn phải chấp nhận rủi ro.
 
-Để hỗ trợ Nixos, có một dự án riêng biệt đang được duy trì tại [Hydenix](https://github.com/richen604/hydenix/tree/main).
-
-> [!QUAN TRỌNG]
-> Kịch bản cài đặt sẽ tự động phát hiện thẻ NVIDIA và cài đặt driver nvidia-dkms cho kernel của bạn.
-> Hãy chắc chắn rằng thẻ NVIDIA của bạn hỗ trợ driver dkms trong danh sách có sẵn [tại đây](https://wiki.archlinux.org/title/NVIDIA).
-
-> [!CẢNH BÁO]
-> Kịch bản này sẽ thay đổi cấu hình `grub` hoặc `systemd-boot` của bạn để kích hoạt NVIDIA DRM.
-
-Để cài đặt, hãy thực hiện các lệnh sau:
+Để cài đặt, thực hiện các lệnh sau:
 
 ```shell
 pacman -S --needed git base-devel
@@ -57,23 +46,20 @@ cd ~/HyDE/Scripts
 ```
 
 > [!MẸO]
-> Bạn cũng có thể thêm bất kỳ ứng dụng nào bạn muốn cài đặt cùng với HyDE vào tệp `Scripts/custom_apps.lst` và truyền tệp đó như một tham số để cài đặt:
+> Bạn cũng có thể thêm bất kỳ ứng dụng nào bạn muốn cài đặt cùng với HyDE vào `Scripts/custom_apps.lst` và truyền tệp này như một tham số để cài đặt nó như sau:
 >
 > ```shell
 > ./install.sh custom_apps.lst
 > ```
 
-Lựa chọn cài đặt thứ hai, bạn cũng có thể sử dụng `Hyde-install`, điều này có thể dễ dàng hơn cho một số người.
-Xem hướng dẫn cài đặt cho HyDE trong [Hyde-cli - Cách sử dụng](https://github.com/kRHYME7/Hyde-cli?tab=readme-ov-file#usage).
-
-Sau khi kịch bản cài đặt hoàn tất và bạn được chuyển đến màn hình đăng nhập SDDM (hoặc màn hình đen lần đầu tiên), hãy khởi động lại hệ thống.
-Để biết thêm chi tiết, vui lòng tham khảo [hướng dẫn cài đặt trên wiki](https://github.com/prasanthrangan/hyprdots/wiki/Installation).
+Sau khi script cài đặt hoàn tất, bạn cần khởi động lại máy tính để có thể đăng nhập vào màn hình SDDM (hoặc màn hình đen) lần đầu tiên.
+Để biết thêm chi tiết, vui lòng tham khảo [hướng dẫn cài đặt wiki](https://github.com/prasanthrangan/hyprdots/wiki/Installation).
 
 <a id="updating"></a>  
 <img src="Source/assets/Updating.gif" width="200"/>
 ---
 
-Để cập nhật HyDE, bạn sẽ cần kéo các thay đổi mới nhất từ GitHub và khôi phục lại cấu hình của mình bằng cách chạy các lệnh sau:
+Để cập nhật HyDE, bạn cần tải về những thay đổi mới nhất từ GitHub và khôi phục lại các cấu hình bằng cách chạy các lệnh sau:
 
 ```shell
 cd ~/HyDE/Scripts
@@ -82,11 +68,11 @@ git pull
 ```
 
 > [!QUAN TRỌNG]
-> Lưu ý rằng bất kỳ cấu hình nào bạn đã thực hiện sẽ bị ghi đè nếu có trong danh sách `Scripts/restore_cfg.lst`.
-> Tuy nhiên, tất cả các cấu hình đã thay thế sẽ được sao lưu và có thể khôi phục từ thư mục `~/.config/cfg_backups`.
+> Lưu ý rằng các cấu hình bạn đã tạo sẽ bị ghi đè nếu chúng được liệt kê để làm như vậy trong `Scripts/restore_cfg.lst`.
+> Tuy nhiên, tất cả các cấu hình bị thay thế đã được sao lưu và có thể phục hồi từ `~/.config/cfg_backups`.
 
-Lựa chọn cập nhật thứ hai, bạn có thể sử dụng `Hyde restore ...`, có cách tốt hơn để quản lý việc khôi phục và sao lưu.
-Để biết thêm chi tiết, bạn có thể tham khảo [Hyde-cli - quản lý dots wiki](https://github.com/kRHYME7/Hyde-cli/wiki/Dots-Management).
+Với một tùy chọn cập nhật thứ hai, bạn có thể sử dụng `Hyde restore ...`, có cách quản lý phục hồi và sao lưu tốt hơn.
+Để biết thêm chi tiết, tham khảo [wiki quản lý cấu hình Hyde-cli](https://github.com/kRHYME7/Hyde-cli/wiki/Dots-Management).
 
 <div align="right">
   <br>
@@ -97,8 +83,8 @@ Lựa chọn cập nhật thứ hai, bạn có thể sử dụng `Hyde restore .
 <img src="Source/assets/Themes.gif" width="200"/>
 ---
 
-Tất cả các chủ đề chính thức của chúng tôi được lưu trữ trong một kho lưu trữ riêng biệt, cho phép người dùng cài đặt chúng thông qua themepatcher.
-Để biết thêm thông tin, hãy truy cập [HyDE-Project/hyde-themes](https://github.com/HyDE-Project/hyde-themes). 
+Tất cả các chủ đề chính thức của chúng tôi được lưu trữ trong một kho lưu trữ riêng, cho phép người dùng cài đặt chúng bằng công cụ themepatcher.
+Để biết thêm thông tin, truy cập [HyDE-Project/hyde-themes](https://github.com/HyDE-Project/hyde-themes). 
 
 <div align="center">
   <table><tr><td>
@@ -106,39 +92,71 @@ Tất cả các chủ đề chính thức của chúng tôi được lưu trữ 
 [![Catppuccin-Latte](https://placehold.co/130x30/dd7878/eff1f5?text=Catppuccin-Latte&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Catppuccin-Latte)
 [![Catppuccin-Mocha](https://placehold.co/130x30/b4befe/11111b?text=Catppuccin-Mocha&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Catppuccin-Mocha)
 [![Decay-Green](https://placehold.co/130x30/90ceaa/151720?text=Decay-Green&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Decay-Green)
-[![Edge-Runner](https://placehold.co/130x30
+[![Edge-Runner](https://placehold.co/130x30/fada16/000000?text=Edge-Runner&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Edge-Runner)
+[![Frosted-Glass](https://placehold.co/130x30/7ed6ff/1e4c84?text=Frosted-Glass&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Frosted-Glass)
+[![Graphite-Mono](https://placehold.co/130x30/a6a6a6/262626?text=Graphite-Mono&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Graphite-Mono)
+[![Gruvbox-Retro](https://placehold.co/130x30/475437/B5CC97?text=Gruvbox-Retro&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Gruvbox-Retro)
+[![Material-Sakura](https://placehold.co/130x30/f2e9
 
-/d66e6e/212124?text=Edge-Runner&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Edge-Runner)
-[![Frosted-Glass](https://placehold.co/130x30/2f789c/eff4f6?text=Frosted-Glass&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Frosted-Glass)
+eb/ff4b6a?text=Material-Sakura&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Material-Sakura)
 
   </td></tr></table>
+</div>
+
+Dưới đây là mô tả nhanh các chủ đề chính thức của chúng tôi:
+
+- **Catppuccin-Latte** — Chủ đề với màu sắc tươi sáng, nhẹ nhàng.
+- **Catppuccin-Mocha** — Chủ đề ấm áp, dễ chịu.
+- **Decay-Green** — Chủ đề với tông màu xanh lá cây.
+- **Edge-Runner** — Chủ đề với giao diện tối giản.
+- **Frosted-Glass** — Chủ đề trong suốt, dễ chịu.
+- **Graphite-Mono** — Chủ đề với màu sắc đơn giản, chủ yếu là xám.
+- **Gruvbox-Retro** — Chủ đề tối giản, với tông màu cổ điển.
+- **Material-Sakura** — Chủ đề với tông màu hồng thanh thoát.
+
+<a id="styles"></a>  
+---
+
+<div align="center">
+
+### Các kiểu dáng hiện tại của chúng tôi!
+
+<table><tr><td>
+
+[![Style 1](https://placehold.co/130x30/70a8af/23282e?text=Style%201&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Style-1)
+[![Style 2](https://placehold.co/130x30/dfaddd/732b5b?text=Style%202&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Style-2)
+[![Style 3](https://placehold.co/130x30/f0ef8c/2b3847?text=Style%203&font=Oswald)](https://github.com/prasanthrangan/hyde-themes/tree/Style-3)
+
+</td></tr></table>
 
 </div>
 
-Để cài đặt theme, chỉ cần chạy lệnh sau và làm theo hướng dẫn:
-
-```shell
-thempatcher install <theme-name> --all
-```
-
-Để cài đặt theme mặc định của Hyprland, chỉ cần chạy:
-
-```shell
-thempatcher install hyprland-theme
-```
-
-Nếu bạn có theme yêu thích của riêng mình và muốn tải lên sau này, vui lòng tham khảo hướng dẫn tại [HyDE](https://github.com/HyDE-Project/hyde-themes#theme-sharing).
+##### Các kiểu dáng hiện tại:
+- **Style 1**: Giao diện cơ bản, đơn giản.
+- **Style 2**: Giao diện tối giản với đường viền.
+- **Style 3**: Giao diện với hiệu ứng trong suốt. 
 
 ---
 
-### Các Phím Tắt Chính
+> [!MẸO]
+> Bạn có thể tìm thêm các kiểu dáng khác trên [HyDE-Project/HyDE-Styles](https://github.com/HyDE-Project/HyDE-Styles).
 
-- <kbd>Super</kbd> + <kbd>Q</kbd> | Đóng cửa sổ đang tập trung
-- <kbd>Super</kbd> + <kbd>Del</kbd> | Đăng xuất khỏi Hyprland
-- <kbd>Super</kbd> + <kbd>W</kbd> | Chuyển cửa sổ giữa chế độ focus và float
-- <kbd>Super</kbd> + <kbd>G</kbd> | Chuyển cửa sổ giữa chế độ focus và group
-- <kbd>Super</kbd> + <kbd>/</kbd> | Hiển thị menu hướng dẫn
-- <kbd>Super</kbd> + <kbd>L</kbd> | Mở màn hình khóa
-- <kbd>Super</kbd> + <kbd>Backspace</kbd> | Mở menu đăng xuất
-- <kbd>Super</kbd> + <kbd>T</kbd> | Mở terminal (kitty)
-- <kbd>Super</kbd> + <kbd>F</kbd> | Mở trình duyệt web (firefox)
+<a id="keybindings"></a>  
+
+---
+
+## Phím tắt:
+
+| Ký hiệu phím        | Mô tả                                                                 |
+|---------------------|------------------------------------------------------------------------|
+| `Super + W`          | Mở Hyprland Menu.                                                      |
+| `Super + H`          | Mở Hyde Launcher.                                                      |
+| `Super + P`          | Mở ứng dụng hoặc lệnh từ Command Pallette.                              |
+| `Super + C`          | Mở Console.                                                           |
+| `Super + E`          | Mở Explorer.                                                          |
+| `Super + F`          | Mở File manager.                                                      |
+| `Super + Tab`        | Chuyển cửa sổ hiện tại.                                               |
+| `Super + Shift + Q`  | Đóng cửa sổ hiện tại.                                                 |
+| `Super + Shift + R`  | Khởi động lại Hyprland.                                               |
+| `Super + Shift + S`  | Chụp màn hình.                                                       |
+| `Super + D`          | Mở Dash.                                                              |
