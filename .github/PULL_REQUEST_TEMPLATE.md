@@ -1,45 +1,53 @@
-# Pull Request
+# Pull Request (PR)
 
-## Description
+## Mô tả
 
-Please read these instructions and remove unnecessary text.
+Vui lòng đọc các hướng dẫn này và xóa những phần không cần thiết.
 
-- Try to include a summary of the changes and which issue is fixed.
-- Also include relevant motivation and context (if applicable).
-- List any dependencies that are required for this change. (e.g., packages or other PRs)
-- Provide a link if there is an issue related to this pull request. e.g., Fixes # (issue)
-- Please add Reviewers, Assignees, Labels, Projects, and Milestones to the PR. (if applicable)
+- Cố gắng cung cấp tóm tắt về các thay đổi và vấn đề được khắc phục.  
+- Bao gồm động lực và ngữ cảnh liên quan (nếu áp dụng).  
+- Liệt kê các phụ thuộc cần thiết cho thay đổi này (ví dụ: package hoặc các PR khác).  
+- Cung cấp liên kết nếu có vấn đề liên quan đến pull request này (ví dụ: Fixes # (issue)).  
+- Vui lòng thêm **Reviewers, Assignees, Labels, Projects**, và **Milestones** vào PR (nếu có thể).
 
-## Type of change
+---
 
-Please put an `x` in the boxes that apply:
+## Loại thay đổi
 
-- [ ] **Bug fix** (non-breaking change which fixes an issue)
-- [ ] **New feature** (non-breaking change which adds functionality)
-- [ ] **Breaking change** (fix or feature that would cause existing functionality to not work as expected)
-- [ ] **Documentation update** (non-breaking change; modified files are limited to the documentations)
-- [ ] **Technical debt** (a code change that does not fix a bug or add a feature but makes something clearer for devs)
-- [ ] **Other** (provide details below)
+Vui lòng đánh dấu `x` vào ô phù hợp:
 
-## Checklist
+- [ ] **Sửa lỗi** (thay đổi không gây phá vỡ, khắc phục một vấn đề)  
+- [ ] **Tính năng mới** (thay đổi không gây phá vỡ, bổ sung chức năng mới)  
+- [ ] **Thay đổi gây phá vỡ** (sửa lỗi hoặc tính năng gây thay đổi không mong muốn với chức năng hiện tại)  
+- [ ] **Cập nhật tài liệu** (thay đổi không gây phá vỡ; chỉ sửa đổi các tệp tài liệu)  
+- [ ] **Nợ kỹ thuật** (thay đổi mã không sửa lỗi hoặc thêm tính năng nhưng làm mã rõ ràng hơn cho các nhà phát triển)  
+- [ ] **Khác** (vui lòng cung cấp chi tiết bên dưới)
 
-Please put an `x` in the boxes that apply:
+---
 
-- [ ] I have read the [CONTRIBUTING](https://github.com/prasanthrangan/hyprdots/blob/main/CONTRIBUTING.md) document.
-- [ ] My code follows the code style of this project.
-- [ ] My commit message follows the [commit guidelines](https://github.com/prasanthrangan/hyprdots/blob/main/CONTRIBUTING.md#git-commit-messages).
-- [ ] My change requires a change to the documentation.
-- [ ] I have updated the documentation accordingly.
-- [ ] I have added a changelog entry.
-- [ ] I have added necessary comments/documentation to my code.
-- [ ] I have added tests to cover my changes.
-- [ ] I have tested my code locally and it works as expected.
-- [ ] All new and existing tests passed.
+## Kiểm tra
 
-## Screenshots
+Vui lòng đánh dấu `x` vào ô phù hợp:
 
-(if appropriate)
+- [ ] Tôi đã đọc tài liệu [CONTRIBUTING](https://github.com/dhungx/hyprland-arch/blob/main/CONTRIBUTING.md).  
+- [ ] Mã của tôi tuân theo phong cách mã hóa của dự án.  
+- [ ] Thông điệp commit của tôi tuân thủ [hướng dẫn commit](https://github.com/dhungx/hyprland-arch/blob/main/CONTRIBUTING.md#git-commit-messages).  
+- [ ] Thay đổi của tôi yêu cầu cập nhật tài liệu.  
+- [ ] Tôi đã cập nhật tài liệu phù hợp.  
+- [ ] Tôi đã thêm mục changelog.  
+- [ ] Tôi đã thêm các nhận xét/tài liệu cần thiết cho mã của mình.  
+- [ ] Tôi đã thêm bài kiểm thử để bao phủ thay đổi của mình.  
+- [ ] Tôi đã kiểm thử mã của mình trên máy cục bộ và nó hoạt động như mong đợi.  
+- [ ] Tất cả các bài kiểm thử mới và hiện có đều đã vượt qua.
 
-## Additional context
+---
 
-Add any other context about the problem here.
+## Ảnh chụp màn hình
+
+(Nếu phù hợp)
+
+---
+
+## Ngữ cảnh bổ sung
+
+Thêm bất kỳ ngữ cảnh nào khác về vấn đề tại đây.
