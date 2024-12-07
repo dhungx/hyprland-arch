@@ -1,23 +1,23 @@
-# --------------------------------------------------- // System
-# downgrade                                            # downgrade packages
-# trash-cli-git                                        # cli to manage trash files
-# libinput-gestures                                    # actions touchpad gestures using libinput
-# gestures                                             # gui for libinput-gestures
+# --------------------------------------------------- // Hệ thống  
+# downgrade                                            # Hạ cấp các gói phần mềm  
+# trash-cli-git                                        # Công cụ dòng lệnh để quản lý các tệp trong thùng rác  
+# libinput-gestures                                    # Thực hiện các cử chỉ trên touchpad bằng libinput  
+# gestures                                             # Giao diện đồ họa (GUI) cho libinput-gestures  
 
-# --------------------------------------------------- // Dependencies
-xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
-# emote                                                # emoji picker gtk3
+# --------------------------------------------------- // Phụ thuộc  
+xdg-desktop-portal-gtk                                 # Cổng xdg desktop sử dụng GTK  
+# emote                                                # Trình chọn emoji cho GTK3  
 
-# --------------------------------------------------- // Gaming
-steam                                                  # gaming platform
-gamemode                                               # daemon and library for game optimisations
-mangohud                                               # system performance overlay
-# gamescope                                            # micro-compositor for gaming
+# --------------------------------------------------- // Chơi game  
+steam                                                  # Nền tảng chơi game  
+gamemode                                               # Tiến trình và thư viện tối ưu hóa chơi game  
+mangohud                                               # Hiển thị hiệu suất hệ thống khi chơi game  
+# gamescope                                            # Trình micro-compositor cho chơi game  
 
-# --------------------------------------------------- // Music
-cava                                                   # audio visualizer
-spotify                                                # proprietary music streaming service
-spicetify-cli                                          # cli to customize spotify client
+# --------------------------------------------------- // Âm nhạc  
+# cava                                                   # Bộ hình ảnh hóa âm thanh  
+# spotify                                                # Dịch vụ phát nhạc trực tuyến độc quyền  
+# spicetify-cli                                          # Công cụ dòng lệnh để tùy chỉnh ứng dụng Spotify  
 
-# --------------------------------------------------- // Apps
-# neovim                                               # vim based text editor
+# --------------------------------------------------- // Ứng dụng  
+# neovim                                               # Trình soạn thảo văn bản dựa trên Vim  
