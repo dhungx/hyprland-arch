@@ -43,7 +43,7 @@ To install, execute the following commands:
 
 ```shell
 pacman -S --needed git base-devel
-git clone --depth 1 https://github.com/prasanthrangan/hyprdots ~/HyDE
+git clone --depth 1 https://github.com/dhungx/hyprland-arch/ ~/HyDE
 cd ~/HyDE/Scripts
 ./install.sh
 ```
@@ -174,62 +174,64 @@ For more information, visit [HyDE-Project/hyde-themes](https://github.com/HyDE-P
 ---
 
 
+Dưới đây là bản dịch tiếng Việt của bảng phím tắt:
+
 <div align="center">
 
-| Keys | Action |
+| Phím | Hành động |
 | :--- | :--- |
-| <kbd>Super</kbd> + <kbd>Q</kbd><br><kbd>Alt</kbd> + <kbd>F4</kbd> | Close focused window|
-| <kbd>Super</kbd> + <kbd>Del</kbd> | Kill Hyprland session |
-| <kbd>Super</kbd> + <kbd>W</kbd> | Toggle the window between focus and float |
-| <kbd>Super</kbd> + <kbd>G</kbd> | Toggle the window between focus and group |
-| <kbd>Super</kbd> + <kbd>slash</kbd> | Launch keybinds hint |
-| <kbd>Alt</kbd> + <kbd>Enter</kbd> | Toggle the window between focus and fullscreen |
-| <kbd>Super</kbd> + <kbd>L</kbd> | Launch lock screen |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | Toggle pin on focused window |
-| <kbd>Super</kbd> + <kbd>Backspace</kbd> | Launch logout menu |
-| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd> | Toggle waybar |
-| <kbd>Super</kbd> + <kbd>Enter</kbd> | Launch terminal emulator (kitty) |
-| <kbd>Super</kbd> + <kbd>E</kbd> | Launch file manager (dolphin) |
-| <kbd>Super</kbd> + <kbd>C</kbd> | Launch text editor (vscode) |
-| <kbd>Super</kbd> + <kbd>F</kbd> | Launch web browser (firefox) |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd> | Launch system monitor (htop/btop or fallback to top) |
-| <kbd>Super</kbd> + <kbd>A</kbd> | Launch application launcher (rofi) |
-| <kbd>Super</kbd> + <kbd>Tab</kbd> | Launch window switcher (rofi) |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> | Launch file explorer (rofi) |
-| <kbd>F10</kbd> | Toggle audio mute |
-| <kbd>F11</kbd> | Decrease volume |
-| <kbd>F12</kbd> | Increase volume |
-| <kbd>Super</kbd> + <kbd>P</kbd> | Partial screenshot capture |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>P</kbd> | Partial screenshot capture (frozen screen) |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> | Monitor screenshot capture |
-| <kbd>PrtScn</kbd> | All monitors screenshot capture |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> | Disable hypr effects for gamemode |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd><kbd>←</kbd> | Cycle wallpaper |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd><kbd>↓</kbd> | Cycle waybar mode |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | Launch wallbash mode select menu (rofi) |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> | Launch theme select menu (rofi) |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> | Launch style select menu (rofi) |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> | Launch theme style select menu (rofi) |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd> | Launch wallpaper select menu (rofi) |
-| <kbd>Super</kbd> + <kbd>V</kbd> | Launch clipboard (rofi) |
-| <kbd>Super</kbd> + <kbd>K</kbd> | Switch keyboard layout |
-| <kbd>Super</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> | Move window focus |
-| <kbd>Alt</kbd> + <kbd>Tab</kbd> | Change window focus |
-| <kbd>Super</kbd> + <kbd>[0-9]</kbd> | Switch workspaces |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd><kbd>→</kbd> | Switch workspaces to a relative workspace |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>↓</kbd> | Move to the first empty workspace |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> | Resize windows |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>[0-9]</kbd> | Move focused window to a relative workspace |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> | Move focused window (tiled/floating) around the current workspace |
-| <kbd>Super</kbd> + <kbd>MouseScroll</kbd> | Scroll through existing workspaces |
-| <kbd>Super</kbd> + <kbd>LeftClick</kbd><br><kbd>Super</kbd> + <kbd>Z</kbd> | Move focused window |
-| <kbd>Super</kbd> + <kbd>RightClick</kbd><br><kbd>Super</kbd> + <kbd>X</kbd> | Resize focused window |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd> | Move/Switch to special workspace (scratchpad) |
-| <kbd>Super</kbd> + <kbd>S</kbd> | Toggle to special workspace |
-| <kbd>Super</kbd> + <kbd>J</kbd> | Toggle focused window split |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>[0-9]</kbd> | Move focused window to a workspace silently |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>H</kbd> | Move between grouped windows backward |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>L</kbd> | Move between grouped windows forward |
+| <kbd>Super</kbd> + <kbd>Q</kbd><br><kbd>Alt</kbd> + <kbd>F4</kbd> | Đóng cửa sổ đang chọn |
+| <kbd>Super</kbd> + <kbd>Del</kbd> | Kết thúc phiên Hyprland |
+| <kbd>Super</kbd> + <kbd>W</kbd> | Chuyển đổi cửa sổ giữa trạng thái tiêu điểm và trạng thái nổi |
+| <kbd>Super</kbd> + <kbd>G</kbd> | Chuyển đổi cửa sổ giữa tiêu điểm và nhóm |
+| <kbd>Super</kbd> + <kbd>slash</kbd> | Hiển thị gợi ý phím tắt |
+| <kbd>Alt</kbd> + <kbd>Enter</kbd> | Chuyển đổi cửa sổ giữa tiêu điểm và toàn màn hình |
+| <kbd>Super</kbd> + <kbd>L</kbd> | Khởi động màn hình khóa |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | Ghim cửa sổ đang chọn |
+| <kbd>Super</kbd> + <kbd>Backspace</kbd> | Hiển thị menu đăng xuất |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd> | Chuyển đổi trạng thái của Waybar |
+| <kbd>Super</kbd> + <kbd>Enter</kbd> | Khởi chạy Terminal (kitty) |
+| <kbd>Super</kbd> + <kbd>E</kbd> | Khởi chạy trình quản lý tệp (dolphin) |
+| <kbd>Super</kbd> + <kbd>C</kbd> | Khởi chạy trình soạn thảo văn bản (vscode) |
+| <kbd>Super</kbd> + <kbd>F</kbd> | Khởi chạy trình duyệt web (firefox) |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd> | Khởi chạy trình quản lý hệ thống (htop/btop hoặc top) |
+| <kbd>Super</kbd> + <kbd>A</kbd> | Khởi chạy trình tìm kiếm ứng dụng (rofi) |
+| <kbd>Super</kbd> + <kbd>Tab</kbd> | Khởi chạy trình chuyển đổi cửa sổ (rofi) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> | Khởi chạy trình quản lý tệp bằng rofi |
+| <kbd>F10</kbd> | Tắt/bật âm thanh |
+| <kbd>F11</kbd> | Giảm âm lượng |
+| <kbd>F12</kbd> | Tăng âm lượng |
+| <kbd>Super</kbd> + <kbd>P</kbd> | Chụp màn hình khu vực |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>P</kbd> | Chụp màn hình khu vực (màn hình đóng băng) |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> | Chụp màn hình màn hình hiện tại |
+| <kbd>PrtScn</kbd> | Chụp màn hình tất cả các màn hình |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> | Tắt hiệu ứng Hypr để chơi game |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd><kbd>←</kbd> | Chuyển đổi hình nền |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd><kbd>↓</kbd> | Chuyển đổi chế độ Waybar |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | Khởi chạy menu chọn chế độ Wallbash (rofi) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> | Khởi chạy menu chọn giao diện (rofi) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> | Khởi chạy menu chọn phong cách (rofi) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> | Khởi chạy menu chọn kiểu giao diện (rofi) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd> | Khởi chạy menu chọn hình nền (rofi) |
+| <kbd>Super</kbd> + <kbd>V</kbd> | Khởi chạy clipboard (rofi) |
+| <kbd>Super</kbd> + <kbd>K</kbd> | Chuyển đổi bố cục bàn phím |
+| <kbd>Super</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> | Di chuyển tiêu điểm cửa sổ |
+| <kbd>Alt</kbd> + <kbd>Tab</kbd> | Thay đổi tiêu điểm cửa sổ |
+| <kbd>Super</kbd> + <kbd>[0-9]</kbd> | Chuyển đổi workspace |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd><kbd>→</kbd> | Chuyển đổi workspace liền kề |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>↓</kbd> | Di chuyển đến workspace trống đầu tiên |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> | Thay đổi kích thước cửa sổ |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>[0-9]</kbd> | Chuyển cửa sổ tiêu điểm đến workspace liền kề |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> | Di chuyển cửa sổ tiêu điểm trong workspace hiện tại |
+| <kbd>Super</kbd> + <kbd>MouseScroll</kbd> | Cuộn qua các workspace hiện có |
+| <kbd>Super</kbd> + <kbd>LeftClick</kbd><br><kbd>Super</kbd> + <kbd>Z</kbd> | Di chuyển cửa sổ tiêu điểm |
+| <kbd>Super</kbd> + <kbd>RightClick</kbd><br><kbd>Super</kbd> + <kbd>X</kbd> | Thay đổi kích thước cửa sổ tiêu điểm |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd> | Chuyển đổi đến workspace đặc biệt (scratchpad) |
+| <kbd>Super</kbd> + <kbd>S</kbd> | Chuyển đổi đến workspace đặc biệt |
+| <kbd>Super</kbd> + <kbd>J</kbd> | Chuyển đổi cửa sổ tiêu điểm sang kiểu chia đôi |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>[0-9]</kbd> | Chuyển cửa sổ tiêu điểm đến workspace mà không hiển thị thông báo |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>H</kbd> | Chuyển qua lại giữa các cửa sổ nhóm từ sau về trước |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>L</kbd> | Chuyển qua lại giữa các cửa sổ nhóm từ trước về sau |
 
 </div>
 
