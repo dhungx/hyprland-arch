@@ -1,7 +1,3 @@
-## Các loại thông điệp commit
-
-Dưới đây là danh sách các loại commit bạn có thể sử dụng:
-
 ### `feat`  
 Thêm một tính năng mới vào dự án  
 ```markdown
