@@ -1,149 +1,123 @@
-# Commit Message Guidelines
+## Các loại thông điệp commit
 
-A good commit message should be descriptive and provide context about the changes made. This makes it easier to understand and review the changes in the future.
+Dưới đây là danh sách các loại commit bạn có thể sử dụng:
 
-Here are some guidelines for writing descriptive commit messages:
-
-- Start with a short summary of the changes made in the commit.
-
-- Use imperative mood for the summary, as if you're giving a command. For example, "Add feature" instead of "Added feature".
-
-- Provide additional details in the commit message body, if necessary. This could include the reason for the change, the impact of the change, or any dependencies that were introduced or removed.
-
-- Keep the message within 72 characters per line to ensure that it's easy to read in Git log output.
-
-Examples of good commit messages:
-
-- "Add authentication feature for user login"
-- "Fix bug causing application to crash on startup"
-- "Update documentation for API endpoints"
-
-Remember, writing descriptive commit messages can save time and frustration in the future, and help others understand the changes made to the codebase.
-
-## Commit Message Types
-
-Here's a more comprehensive list of commit types that you can use:
-
-`feat`: Adding a new feature to the project
-
+### `feat`  
+Thêm một tính năng mới vào dự án  
 ```markdown
-feat: Add multi-image upload support
+feat: Thêm hỗ trợ tải lên nhiều ảnh
 ```
 
-`fix`: Fixing a bug or issue in the project
-
+### `fix`  
+Sửa lỗi hoặc vấn đề trong dự án  
 ```markdown
-fix: Fix bug causing application to crash on startup
+fix: Sửa lỗi khiến ứng dụng bị treo khi khởi động
 ```
 
-`docs`: Updating documentation in the project
-
+### `docs`  
+Cập nhật tài liệu cho dự án  
 ```markdown
-docs: Update documentation for API endpoints
+docs: Cập nhật tài liệu cho endpoint API
 ```
 
-`style`: Making cosmetic or style changes to the project (such as changing colors or formatting code)
-
+### `style`  
+Thay đổi về giao diện hoặc định dạng mã mà không ảnh hưởng đến logic  
 ```markdown
-style: Update colors and formatting
+style: Cập nhật màu sắc và định dạng
 ```
 
-`refactor`: Making code changes that don't affect the behavior of the project, but improve its quality or maintainability
-
+### `refactor`  
+Thay đổi mã nguồn để cải thiện chất lượng hoặc bảo trì mà không thay đổi hành vi  
 ```markdown
-refactor: Remove unused code
+refactor: Xóa mã không sử dụng
 ```
 
-`test`: Adding or modifying tests for the project
-
+### `test`  
+Thêm hoặc chỉnh sửa các bài kiểm thử trong dự án  
 ```markdown
-test: Add tests for new feature
+test: Thêm kiểm thử cho tính năng mới
 ```
 
-`chore`: Making changes to the project that don't fit into any other category, such as updating dependencies or configuring the build system
-
+### `chore`  
+Thực hiện các thay đổi không thuộc loại nào khác, như cập nhật phụ thuộc  
 ```markdown
-chore: Update dependencies
+chore: Cập nhật các thư viện phụ thuộc
 ```
 
-`perf`: Improving performance of the project
-
+### `perf`  
+Cải thiện hiệu năng của dự án  
 ```markdown
-perf: Improve performance of image processing
+perf: Cải thiện hiệu năng xử lý hình ảnh
 ```
 
-`security`: Addressing security issues in the project
-
+### `security`  
+Giải quyết các vấn đề về bảo mật trong dự án  
 ```markdown
-security: Update dependencies to address security issues
+security: Cập nhật thư viện để khắc phục lỗ hổng bảo mật
 ```
 
-`merge`: Merging branches in the project
-
+### `merge`  
+Hợp nhất các nhánh trong dự án  
 ```markdown
-merge: Merge branch 'feature/branch-name' into develop
+merge: Hợp nhánh 'feature/branch-name' vào 'develop'
 ```
 
-`revert`: Reverting a previous commit
-
+### `revert`  
+Hoàn tác một commit trước đó  
 ```markdown
-revert: Revert "Add feature"
+revert: Hoàn tác "Thêm tính năng"
 ```
 
-`build`: Making changes to the build system or dependencies of the project
-
+### `build`  
+Thay đổi hệ thống build hoặc các phụ thuộc  
 ```markdown
-build: Update dependencies
+build: Cập nhật cấu hình build
 ```
 
-`ci`: Making changes to the continuous integration (CI) system for the project
-
+### `ci`  
+Thay đổi cấu hình hệ thống tích hợp liên tục (CI)  
 ```markdown
-ci: Update CI configuration
+ci: Cập nhật cấu hình CI
 ```
 
-`config`: Making changes to configuration files for the project
-
+### `config`  
+Cập nhật hoặc thay đổi tệp cấu hình của dự án  
 ```markdown
-config: Update configuration files
+config: Cập nhật tệp cấu hình
 ```
 
-`deploy`: Making changes to the deployment process for the project
-
+### `deploy`  
+Thay đổi liên quan đến quy trình triển khai dự án  
 ```markdown
-deploy: Update deployment scripts
+deploy: Cập nhật tập lệnh triển khai
 ```
 
-`init`: Creating or initializing a new repository or project
-
+### `init`  
+Khởi tạo một dự án hoặc kho mã mới  
 ```markdown
-init: Initialize project
+init: Khởi tạo dự án
 ```
 
-`move`: Moving files or directories within the project
-
+### `move`  
+Di chuyển tệp hoặc thư mục trong dự án  
 ```markdown
-move: Move files to new directory
+move: Di chuyển tệp sang thư mục mới
 ```
 
-`rename`: Renaming files or directories within the project
-
+### `rename`  
+Đổi tên tệp hoặc thư mục trong dự án  
 ```markdown
-rename: Rename files
+rename: Đổi tên tệp
 ```
 
-`remove`: Removing files or directories from the project
-
+### `remove`  
+Xóa tệp hoặc thư mục khỏi dự án  
 ```markdown
-remove: Remove files
+remove: Xóa tệp không cần thiết
 ```
 
-`update`: Updating code, dependencies, or other components of the project
-
+### `update`  
+Cập nhật mã, phụ thuộc hoặc các thành phần khác trong dự án  
 ```markdown
-update: Update code
+update: Cập nhật mã nguồn
 ```
-
-These are just some examples, and you can create your own custom commit types as well. However, it's important to use them consistently and write clear, descriptive commit messages to make it easy for others to understand the changes you've made.
-
-**Important:** If you are planning to use a custom commit message type other than the ones listed above, make sure to add it to this list so that others can understand it as well. Create a pull request to add it to this file.
